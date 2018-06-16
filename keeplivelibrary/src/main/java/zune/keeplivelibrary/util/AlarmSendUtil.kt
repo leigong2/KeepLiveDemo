@@ -1,13 +1,12 @@
-package com.zune.test180311.util
+package zune.keeplivelibrary.util
 
 import android.annotation.SuppressLint
 import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Context
+import android.content.Context.ALARM_SERVICE
 import android.content.Intent
 import android.os.SystemClock
-
-import android.content.Context.ALARM_SERVICE
 
 /**
  * Created by leigong2 on 2018-04-05 005.

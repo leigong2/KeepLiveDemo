@@ -5,9 +5,9 @@ import android.content.Intent
 import android.util.Log
 import com.blankj.utilcode.util.SPUtils
 import com.blankj.utilcode.util.Utils
-import com.zune.test180311.util.CrashHandler
 import zune.keeplivelibrary.activity.OnePointActivity
 import zune.keeplivelibrary.app.KeepLiveHelper
+import zune.keeplivelibrary.util.CrashHandler
 
 /**
  * Created by leigong2 on 2018-04-05 005.

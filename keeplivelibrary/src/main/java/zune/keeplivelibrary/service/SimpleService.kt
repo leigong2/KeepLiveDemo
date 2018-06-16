@@ -1,4 +1,4 @@
-package zune.keeplivelibrary
+package zune.keeplivelibrary.service
 
 import android.app.AlarmManager
 import android.app.AlarmManager.RTC
@@ -14,13 +14,14 @@ import android.os.IBinder
 import android.os.PowerManager
 import android.support.v4.app.NotificationCompat
 import android.util.Log
-import com.zune.test180311.util.AlarmSendUtil
-import com.zune.test180311.util.CrashHandler
-import com.zune.test180311.util.NotificationUtils
+import zune.keeplivelibrary.R
 import zune.keeplivelibrary.activity.OnePointActivity
 import zune.keeplivelibrary.service.BaseOService.Companion.ALARM_INTERVAL
 import zune.keeplivelibrary.service.high.RemoteOService
 import zune.keeplivelibrary.service.low.RemoteService
+import zune.keeplivelibrary.util.AlarmSendUtil
+import zune.keeplivelibrary.util.CrashHandler
+import zune.keeplivelibrary.util.NotificationUtils
 
 /**
  * Created by Fussen on 2017/2/21.

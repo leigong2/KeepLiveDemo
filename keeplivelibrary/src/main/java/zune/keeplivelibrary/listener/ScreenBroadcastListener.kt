@@ -1,16 +1,10 @@
-package com.zune.test180311.low
-
+package zune.keeplivelibrary.listener
 import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.util.Log
-import org.greenrobot.eventbus.EventBus
-import zune.keeplivelibrary.activity.OnePointActivity
-import zune.keeplivelibrary.app.KeepLiveHelper
-import zune.keeplivelibrary.event.ScreenEvent
-import zune.keeplivelibrary.event.ServiceDeadEvent
 
 /**
  * Created by 王志龙 on 2017/11/29 029.

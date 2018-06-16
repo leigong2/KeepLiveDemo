@@ -1,5 +1,4 @@
-package com.zune.test180311.main
-
+package zune.keeplivelibrary.receiver
 
 import android.content.BroadcastReceiver
 import android.content.Context

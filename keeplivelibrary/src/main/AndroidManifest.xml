@@ -75,7 +75,7 @@
             android:priority="1000"
             android:process=":aidl"
             android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <service android:name=".SimpleService"
+        <service android:name=".service.SimpleService"
             android:enabled="true"
             android:exported="true"
             android:persistent="true"

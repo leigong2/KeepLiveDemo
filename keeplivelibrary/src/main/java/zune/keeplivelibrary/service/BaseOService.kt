@@ -10,14 +10,14 @@ import android.media.MediaPlayer
 import android.support.v4.app.JobIntentService
 import android.util.Log
 import com.xiaomi.mipush.sdk.MiPushClient
-import com.zune.test180311.low.ScreenBroadcastListener
-import com.zune.test180311.low.WakeReceiver
 import org.greenrobot.eventbus.EventBus
 import zune.keeplivelibrary.R
 import zune.keeplivelibrary.activity.OnePointActivity
 import zune.keeplivelibrary.app.KeepLiveHelper
 import zune.keeplivelibrary.config.ConstantsConfig
 import zune.keeplivelibrary.event.ServiceDeadEvent
+import zune.keeplivelibrary.listener.ScreenBroadcastListener
+import zune.keeplivelibrary.receiver.WakeReceiver
 import zune.keeplivelibrary.service.high.AidlOService
 import zune.keeplivelibrary.service.high.MainOService
 import zune.keeplivelibrary.service.high.RemoteOService

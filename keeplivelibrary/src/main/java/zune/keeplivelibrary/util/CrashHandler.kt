@@ -1,4 +1,4 @@
-package com.zune.test180311.util
+package zune.keeplivelibrary.util
 
 import android.app.ActivityManager
 import android.content.Context

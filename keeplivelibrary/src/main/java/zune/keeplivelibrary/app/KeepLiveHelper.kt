@@ -17,10 +17,10 @@ import com.xiaomi.mipush.sdk.MiPushClient
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
-import zune.keeplivelibrary.SimpleService
 import zune.keeplivelibrary.config.ConstantsConfig
 import zune.keeplivelibrary.event.ServiceDeadEvent
 import zune.keeplivelibrary.service.BaseOService.Companion.ALARM_INTERVAL
+import zune.keeplivelibrary.service.SimpleService
 import zune.keeplivelibrary.service.high.AidlOService
 import zune.keeplivelibrary.service.high.MainOService
 import zune.keeplivelibrary.service.high.RemoteOService
