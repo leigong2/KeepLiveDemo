@@ -45,9 +45,6 @@
               <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.1.0/8db6949a924ad553fb7f6f103b66780c4d3e59c5/kotlin-android-extensions-1.1.0.jar" />
             </array>
           </option>
-          <option name="errors">
-            <ArgumentParseErrors />
-          </option>
         </compilerArguments>
       </configuration>
     </facet>

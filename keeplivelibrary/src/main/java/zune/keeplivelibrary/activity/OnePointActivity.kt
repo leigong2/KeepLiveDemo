@@ -11,6 +11,7 @@ import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 import zune.keeplivelibrary.R
+import zune.keeplivelibrary.app.KeepLiveHelper
 import zune.keeplivelibrary.event.ScreenEvent
 import zune.keeplivelibrary.service.high.AidlOService
 import zune.keeplivelibrary.service.high.MainOService
@@ -60,6 +61,7 @@ class OnePointActivity:AppCompatActivity(){
             MainOService.activityStart(this)
             RemoteOService.activityStart(this)
             AidlOService.activityStart(this)
+            KeepLiveHelper.getDefault().startBindOService()
         }
         EventBus.getDefault().unregister(this)
     }
@@ -85,6 +87,7 @@ class OnePointActivity:AppCompatActivity(){
             MainService.start(this)
             RemoteService.start(this)
             AidlService.start(this)
+            KeepLiveHelper.getDefault().startBindService(this)
         }
     }
 

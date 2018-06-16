@@ -251,12 +251,14 @@ class KeepLiveHelper {
     }
 
     fun startBindService(context: Context?) {
-        try {
-            var intent = Intent(context, mClazz)
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            context?.startService(intent)
-        } catch (e:Exception) {
-            print("zune: e$e")
+        if (mClazz != null) {
+            try {
+                val intent = Intent(context, mClazz)
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                context?.startService(intent)
+            } catch (e: Exception) {
+                println("zune: e$e")
+            }
         }
     }
 
