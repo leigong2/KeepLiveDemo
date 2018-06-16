@@ -1,6 +1,5 @@
 package keeplive.zune.com.keeplivedemo;
 
-import android.content.Context
 import android.content.Intent
 import android.os.Build.VERSION
 import android.os.Build.VERSION_CODES.N
