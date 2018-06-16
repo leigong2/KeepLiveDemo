@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/power_lay"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="忽略电池优化"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:checked="true"
+                android:id="@+id/power_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/two_process"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="双进程守护"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:checked="true"
+                android:id="@+id/process_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/alarm"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="闹钟开启"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:checked="true"
+                android:id="@+id/alarm_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/remote"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="远程服务"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:checked="true"
+                android:id="@+id/remote_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/white_list"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="白名单"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:checked="true"
+                android:id="@+id/white_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/music"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="循环空音乐"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:checked="true"
+                android:id="@+id/music_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/one_point"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="一个像素点"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:checked="true"
+                android:id="@+id/one_point_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/force_service"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="前台服务"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:checked="true"
+                android:id="@+id/force_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/push_service"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="推送SDK"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:checked="true"
+                android:id="@+id/push_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/screen_service"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="亮屏锁屏监控"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:checked="true"
+                android:id="@+id/screen_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/daemon_service"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Daemon通知权限"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:checked="true"
+                android:id="@+id/daemon_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/for_n"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="适配安卓7.0"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Switch
+                android:checked="true"
+                android:id="@+id/n_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:background="#EEEEEE"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:text="确认"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="200dp"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+</ScrollView>

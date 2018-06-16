@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/KeepLiveDemo.iml" filepath="$PROJECT_DIR$/KeepLiveDemo.iml" />
+      <module fileurl="file://E:\workspace\KeepLiveDemo\app\KeepLiveDemo-app.iml" filepath="E:\workspace\KeepLiveDemo\app\KeepLiveDemo-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/keeplivelibrary/keeplivelibrary.iml" filepath="$PROJECT_DIR$/keeplivelibrary/keeplivelibrary.iml" />
+      <module fileurl="file://E:\workspace\KeepLiveDemo\workspace-KeepLiveDemo.iml" filepath="E:\workspace\KeepLiveDemo\workspace-KeepLiveDemo.iml" />
+    </modules>
+  </component>
+</project>
