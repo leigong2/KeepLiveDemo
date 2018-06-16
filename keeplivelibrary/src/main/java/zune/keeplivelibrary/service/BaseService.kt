@@ -56,6 +56,7 @@ abstract class BaseService:Service(){
             //发送唤醒广播来促使挂掉的UI进程重新启动起来
             restartDelay()
         }
+        KeepLiveHelper.getDefault().startBindService(this)
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -99,6 +100,7 @@ abstract class BaseService:Service(){
             }).start()
         }
         EventBus.getDefault().post(ServiceDeadEvent())
+        KeepLiveHelper.getDefault().startBindService(this)
     }
 
     protected fun startPlayMusic() {

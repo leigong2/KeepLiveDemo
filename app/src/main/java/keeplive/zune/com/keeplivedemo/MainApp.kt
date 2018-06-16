@@ -2,6 +2,7 @@ package keeplive.zune.com.keeplivedemo
 
 import android.annotation.SuppressLint
 import android.app.Application
+import android.os.Build.VERSION_CODES.N
 import zune.keeplivelibrary.app.KeepLiveHelper
 
 
@@ -22,7 +23,11 @@ class MainApp:Application(){
         super.onCreate()
         context = this
         KeepLiveHelper.getDefault().init(this, PUSH_APP_ID, PUSH_APP_KEY)
-        KeepLiveHelper.getDefault().onCreate()
+        if (android.os.Build.VERSION.SDK_INT >= N) {
+            KeepLiveHelper.getDefault().bindService(BindOService::class.java)
+        } else {
+            KeepLiveHelper.getDefault().bindService(BindService::class.java)
+        }
     }
 
     override fun onTerminate() {

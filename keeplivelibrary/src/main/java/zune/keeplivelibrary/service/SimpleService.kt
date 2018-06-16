@@ -16,6 +16,7 @@ import android.support.v4.app.NotificationCompat
 import android.util.Log
 import zune.keeplivelibrary.R
 import zune.keeplivelibrary.activity.OnePointActivity
+import zune.keeplivelibrary.app.KeepLiveHelper
 import zune.keeplivelibrary.service.BaseOService.Companion.ALARM_INTERVAL
 import zune.keeplivelibrary.service.high.RemoteOService
 import zune.keeplivelibrary.service.low.RemoteService
@@ -56,6 +57,11 @@ class SimpleService : Service() {
             startForeground(1, notification)
         }
         super.onCreate()
+        if (android.os.Build.VERSION.SDK_INT >= N) {
+            KeepLiveHelper.getDefault().startBindOService()
+        } else {
+            KeepLiveHelper.getDefault().startBindService(this)
+        }
     }
 
     /**
@@ -95,6 +101,11 @@ class SimpleService : Service() {
                             , PendingIntent.getService(this, 2
                             , Intent(this, SimpleService::class.java)
                             , PendingIntent.FLAG_ONE_SHOT))  //134217728
+        }
+        if (android.os.Build.VERSION.SDK_INT >= N) {
+            KeepLiveHelper.getDefault().startBindOService()
+        } else {
+            KeepLiveHelper.getDefault().startBindService(this)
         }
     }
 

@@ -3,14 +3,15 @@ package zune.keeplivelibrary.app
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.Application
+import android.app.Service
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Build.VERSION_CODES.N
-import android.os.Bundle
 import android.os.PowerManager
 import android.provider.Settings
+import android.support.v4.app.JobIntentService
 import com.blankj.utilcode.util.SPUtils
 import com.blankj.utilcode.util.Utils
 import com.xiaomi.mipush.sdk.MiPushClient
@@ -33,6 +34,8 @@ import zune.keeplivelibrary.service.low.RemoteService
  */
 class KeepLiveHelper {
     private var mContext: Application? = null
+    private var hasRegister = false
+    private var mClazz: Class<out Service>? = null
     companion object {
         @SuppressLint("StaticFieldLeak")
         var instance: KeepLiveHelper? = null
@@ -128,10 +131,15 @@ class KeepLiveHelper {
         } else {
             //TODO NOTHING
         }
-    }
-
-    fun onCreate() {
-        EventBus.getDefault().register(this)
+        if (!hasRegister) {
+            EventBus.getDefault().register(this)
+            hasRegister = true
+        }
+        if (android.os.Build.VERSION.SDK_INT >= N) {
+            KeepLiveHelper.getDefault().startBindOService()
+        } else {
+            KeepLiveHelper.getDefault().startBindService(mContext)
+        }
     }
 
     @Subscribe(threadMode = ThreadMode.MAIN)
@@ -238,8 +246,27 @@ class KeepLiveHelper {
         SPUtils.getInstance().put("for_n", ConstantsConfig.nToggle)
     }
 
-    fun getLaunchActivityName() {
-
+    fun bindService(clazz: Class<out Service>?) {
+        this.mClazz = clazz
     }
 
+    fun startBindService(context: Context?) {
+        try {
+            var intent = Intent(context, mClazz)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            context?.startService(intent)
+        } catch (e:Exception) {
+            print("zune: e$e")
+        }
+    }
+
+    fun startBindOService() {
+        if (mContext != null && mClazz != null) {
+            try {
+                JobIntentService.enqueueWork(mContext!!, mClazz!!, 10000, Intent())
+            } catch (e:Exception) {
+                print("zune: e$e")
+            }
+        }
+    }
 }

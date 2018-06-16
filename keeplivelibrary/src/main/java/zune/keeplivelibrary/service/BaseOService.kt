@@ -7,6 +7,7 @@ import android.app.Service
 import android.content.Context
 import android.content.Intent
 import android.media.MediaPlayer
+import android.os.Build.VERSION_CODES.N
 import android.support.v4.app.JobIntentService
 import android.util.Log
 import com.xiaomi.mipush.sdk.MiPushClient
@@ -55,6 +56,7 @@ abstract class BaseOService:JobIntentService() {
             //发送唤醒广播来促使挂掉的UI进程重新启动起来
             restartDelay()
         }
+        KeepLiveHelper.getDefault().startBindOService()
     }
 
     override fun onHandleWork(intent: Intent) {
@@ -120,6 +122,7 @@ abstract class BaseOService:JobIntentService() {
             }).start()
         }
         EventBus.getDefault().post(ServiceDeadEvent())
+        KeepLiveHelper.getDefault().startBindOService()
     }
 
     private fun restartDelay() {
