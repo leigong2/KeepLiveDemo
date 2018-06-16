@@ -33,6 +33,7 @@ class MainActivity: AppCompatActivity() {
         screen_toggle.isChecked = ConstantsConfig.screenToggle
         daemon_toggle.isChecked = ConstantsConfig.daemonToggle
         n_toggle.isChecked = ConstantsConfig.nToggle
+
     }
 
     private fun initListener() {
