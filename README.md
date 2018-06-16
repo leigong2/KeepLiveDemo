@@ -17,6 +17,6 @@ allprojects {
 
 	dependencies {
 
-	        implementation 'com.github.leigong2:KeepLiveDemo:v0.8.3'
+	        implementation 'com.github.leigong2:KeepLiveDemo:v0.8.4'
 
 	}
