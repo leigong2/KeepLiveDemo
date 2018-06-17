@@ -1,5 +1,6 @@
 package zune.keeplivelibrary.util
 
+import android.annotation.SuppressLint
 import android.app.ActivityManager
 import android.content.Context
 import android.util.Log
@@ -115,6 +116,7 @@ private constructor() : Thread.UncaughtExceptionHandler {
         val TAG = "zune: "
         // CrashHandler实例
         /** 获取CrashHandler实例 ,单例模式  */
+        @SuppressLint("StaticFieldLeak")
         val instance = CrashHandler()
 
         fun isAppaLive(context: Context, packageName: String): Boolean {

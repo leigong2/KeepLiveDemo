@@ -1,17 +1,21 @@
 package zune.keeplivelibrary.app
 
+import android.Manifest
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.Application
 import android.app.Service
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager.PERMISSION_GRANTED
 import android.net.Uri
 import android.os.Build
 import android.os.Build.VERSION_CODES.N
 import android.os.PowerManager
 import android.provider.Settings
+import android.support.v4.app.ActivityCompat
 import android.support.v4.app.JobIntentService
+import android.support.v4.content.ContextCompat
 import com.blankj.utilcode.util.SPUtils
 import com.blankj.utilcode.util.Utils
 import com.xiaomi.mipush.sdk.MiPushClient
@@ -28,6 +32,7 @@ import zune.keeplivelibrary.service.high.RemoteOService
 import zune.keeplivelibrary.service.low.AidlService
 import zune.keeplivelibrary.service.low.MainService
 import zune.keeplivelibrary.service.low.RemoteService
+import zune.keeplivelibrary.util.CrashHandler
 
 /**
  * Created by leigong2 on 2018-06-07 007.
@@ -139,6 +144,20 @@ class KeepLiveHelper {
             KeepLiveHelper.getDefault().startBindOService()
         } else {
             KeepLiveHelper.getDefault().startBindService(mContext)
+        }
+        if (mContext != null) {
+            CrashHandler.instance.init(mContext!!)
+        }
+    }
+
+    fun requestPermission(activity: Activity){
+        var permissions = arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE
+                , Manifest.permission.READ_EXTERNAL_STORAGE)
+        if (ContextCompat.checkSelfPermission(activity, permissions[0]) != PERMISSION_GRANTED
+                || ContextCompat.checkSelfPermission(activity, permissions[1])
+                != PERMISSION_GRANTED) {
+            // 如果没有授予该权限，就去提示用户请求
+            ActivityCompat.requestPermissions(activity, permissions, 1001)
         }
     }
 
