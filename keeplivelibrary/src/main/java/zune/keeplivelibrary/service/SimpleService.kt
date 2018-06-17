@@ -40,21 +40,11 @@ class SimpleService : Service() {
     }
     override fun onCreate() {
         println("zune: onCreateO${this.javaClass.simpleName}")
+        val notificationUtils = NotificationUtils(this)
         if (Build.VERSION.SDK_INT >= O) {
-            val notificationUtils = NotificationUtils(this)
-            notificationUtils.sendNotification("保活", "保活")
+            notificationUtils.sendNotification()
         } else {
-            val intent = Intent(this, OnePointActivity::class.java)
-            val pi = PendingIntent.getActivity(this, 0, intent, 0)
-            val notification = NotificationCompat.Builder(this)
-                    .setContentTitle("保活")
-                    .setContentText("保活")
-                    .setWhen(System.currentTimeMillis())
-                    .setSmallIcon(R.mipmap.icon_round)
-                    .setLargeIcon(BitmapFactory.decodeResource(resources, R.mipmap.icon_round))
-                    .setContentIntent(pi)
-                    .build()
-            startForeground(1, notification)
+            notificationUtils.sendNotification(this)
         }
         super.onCreate()
         if (android.os.Build.VERSION.SDK_INT >= N) {

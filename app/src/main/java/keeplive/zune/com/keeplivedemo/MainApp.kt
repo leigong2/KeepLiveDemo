@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.app.Application
 import android.os.Build.VERSION_CODES.N
 import zune.keeplivelibrary.app.KeepLiveHelper
+import zune.keeplivelibrary.util.NotificationUtils
 
 
 /**
@@ -23,6 +24,7 @@ class MainApp:Application(){
         super.onCreate()
         context = this
         KeepLiveHelper.getDefault().init(this, PUSH_APP_ID, PUSH_APP_KEY)
+        NotificationUtils().setNotification("测试变化标题", "测试变化内容", R.mipmap.ic_launcher)
         if (android.os.Build.VERSION.SDK_INT >= N) {
             KeepLiveHelper.getDefault().bindService(BindOService::class.java)
         } else {
