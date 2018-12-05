@@ -108,7 +108,11 @@ class SimpleService : Service() {
                 Log.i("zune: ", "不允许后台启动")
             }
         } else {
-            RemoteOService.start(application, ALARM_INTERVAL)
+            try {
+                RemoteOService.start(application, ALARM_INTERVAL)
+            } catch (e: Exception) {
+                Log.i("zune: ", "不允许后台启动")
+            }
         }
         return Service.START_STICKY
     }
