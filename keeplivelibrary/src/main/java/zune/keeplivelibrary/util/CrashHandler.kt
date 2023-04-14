@@ -126,8 +126,8 @@ private constructor() : Thread.UncaughtExceptionHandler {
             var isAppRunning = false
             //String MY_PKG_NAME = "你的包名";
             for (info in list) {
-                if (info.topActivity.packageName == packageName//如果想要手动输入的话可以str换成<span style="font-family: Arial, Helvetica, sans-serif;">MY_PKG_NAME，下面相同</span>
-                        || info.baseActivity.packageName == packageName) {
+                if (info.topActivity?.packageName == packageName//如果想要手动输入的话可以str换成<span style="font-family: Arial, Helvetica, sans-serif;">MY_PKG_NAME，下面相同</span>
+                        || info.baseActivity?.packageName == packageName) {
                     isAppRunning = true
                     break
                 }

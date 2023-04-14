@@ -3,10 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/KeepLiveDemo.iml" filepath="$PROJECT_DIR$/KeepLiveDemo.iml" />
-      <module fileurl="file://E:\workspace\KeepLiveDemo\app\KeepLiveDemo-app.iml" filepath="E:\workspace\KeepLiveDemo\app\KeepLiveDemo-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/keeplivelibrary/keeplivelibrary.iml" filepath="$PROJECT_DIR$/keeplivelibrary/keeplivelibrary.iml" />
-      <module fileurl="file://E:\workspace\KeepLiveDemo\workspace-KeepLiveDemo.iml" filepath="E:\workspace\KeepLiveDemo\workspace-KeepLiveDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/KeepLiveDemo.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/KeepLiveDemo.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/KeepLiveDemo.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/KeepLiveDemo.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/KeepLiveDemo.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/KeepLiveDemo.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/KeepLiveDemo.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/KeepLiveDemo.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/keeplivelibrary/KeepLiveDemo.keeplivelibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/keeplivelibrary/KeepLiveDemo.keeplivelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/keeplivelibrary/KeepLiveDemo.keeplivelibrary.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/keeplivelibrary/KeepLiveDemo.keeplivelibrary.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/keeplivelibrary/KeepLiveDemo.keeplivelibrary.main.iml" filepath="$PROJECT_DIR$/.idea/modules/keeplivelibrary/KeepLiveDemo.keeplivelibrary.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/keeplivelibrary/KeepLiveDemo.keeplivelibrary.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/keeplivelibrary/KeepLiveDemo.keeplivelibrary.unitTest.iml" />
     </modules>
   </component>
 </project>

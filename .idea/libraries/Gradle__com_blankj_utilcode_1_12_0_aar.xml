@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.blankj:utilcode:1.12.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3e30e299fad23a5d49054c39451d40c6/transformed/utilcode-1.12.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3e30e299fad23a5d49054c39451d40c6/transformed/utilcode-1.12.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3e30e299fad23a5d49054c39451d40c6/transformed/utilcode-1.12.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3e30e299fad23a5d49054c39451d40c6/transformed/utilcode-1.12.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.blankj/utilcode/1.12.0/f6f8a058a96aaab1860d5568b7dfc2c9078fa19e/utilcode-1.12.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.blankj/utilcode/1.12.0/10055a810ac0b2d6b782c320d8b3c4e02c4c4601/utilcode-1.12.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

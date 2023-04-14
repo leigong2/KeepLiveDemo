@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":keeplivelibrary:unitTest" external.linked.project.path="$MODULE_DIR$/../../../keeplivelibrary" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <flagArguments>
+            <flagArg name="noStdlib" arg="true" />
+          </flagArguments>
+          <stringArguments>
+            <stringArg name="classpath">
+              <args>
+                <arg>$MODULE_DIR$/../../../keeplivelibrary/libs/MiPush_SDK_Client_3_2_2.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions-runtime/1.6.20/e0d69c8bf97c1f31ef152fb1d53507d9c2ee6b0c/kotlin-android-extensions-runtime-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.20/6cedc143badbb4f1c6b7f5a340b04edff1743208/kotlin-stdlib-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.20/27b4562b6713d70f458c6d7ea39aadacb8e6a92b/kotlin-stdlib-common-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/ca76a0d6f1a8f0d825e5e10e43c7a3cd/transformed/appcompat-v7-26.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/f8b7eadd673190f3b96a86244789ab09/transformed/animated-vector-drawable-26.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/7c837ebd3ea3f2d9c9a2dfe99c320cce/transformed/support-vector-drawable-26.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/80e893eeee742df2ee8a68db17ba7260/transformed/support-v4-26.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/6bb57d24ef25b62472aba7dccab03f03/transformed/support-media-compat-26.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/a8a2b537c7a96268f559dfa35c49eac0/transformed/support-fragment-26.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/e76a15fb6642115bc3ac5734f1e16d5a/transformed/support-core-utils-26.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/9f6282fe4c685b68eaea9ed7e79542cc/transformed/support-core-ui-26.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/790e03910b6ddeb39150c162614e95c3/transformed/support-compat-26.1.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.1.0/814258103cf26a15fcc26ecce35f5b7d24b73f8/support-annotations-26.1.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/a8512847f75721e1daaacdad0ac6b2f4/transformed/runtime-1.0.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.0/e414a4cb28434e25c4f6aa71426eb20cf4874ae9/common-1.0.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/transforms-3/87fd16f93099a9fdeb1591a168f01903/transformed/utilcode-1.12.0-api.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.greenrobot/eventbus/3.1.1/5cd91fd014f5b72292f959748c20a2cefefae77d/eventbus-3.1.1.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Android/Sdk/platforms/android-32/android.jar</arg>
+                <arg>$MODULE_DIR$/../../../../../Android/Sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>
+              </args>
+            </stringArg>
+            <stringArg name="destination" arg="$MODULE_DIR$/../../../keeplivelibrary/build/tmp/kotlin-classes/debugUnitTest" />
+            <stringArg name="jvmTarget" arg="1.8" />
+            <stringArg name="moduleName" arg="keeplivelibrary_debug" />
+            <stringArg name="apiVersion" arg="1.6" />
+            <stringArg name="languageVersion" arg="1.6" />
+          </stringArguments>
+          <arrayArguments>
+            <arrayArg name="friendPaths">
+              <args>
+                <arg>$MODULE_DIR$/../../../keeplivelibrary/build/tmp/kotlin-classes/debug</arg>
+                <arg>$MODULE_DIR$/../../../keeplivelibrary/build/intermediates/javac/debug/classes</arg>
+                <arg>$MODULE_DIR$/../../../keeplivelibrary/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
+              </args>
+            </arrayArg>
+            <arrayArg name="pluginClasspaths">
+              <args>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.6.20/95eaaca93565ed8e262f6b9e402d0382f28d0cf6/kotlin-android-extensions-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.6.20/18f66cca4301c12893ebe4ef47d65c3d9d2bff9b/kotlin-compiler-embeddable-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.20/669965154723f1a712e8677af0cc5470dfdab81c/kotlin-reflect-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.20/6cedc143badbb4f1c6b7f5a340b04edff1743208/kotlin-stdlib-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.6.20/a115c367e0fd9c8909293b208689afca0c88a6f1/kotlin-script-runtime-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/1.6.20/d4cac343029f48f106c57f457384771165d7deb5/kotlin-daemon-embeddable-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20200330/3afb14d5f9ceb459d724e907a21145e8ff394f02/trove4j-1.0.20200330.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.6.0/330f2244e9030119ab3030fc3fededc86713d9cc/jna-5.6.0.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.20/27b4562b6713d70f458c6d7ea39aadacb8e6a92b/kotlin-stdlib-common-1.6.20.jar</arg>
+                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>
+              </args>
+            </arrayArg>
+            <arrayArg name="pluginOptions">
+              <args>
+                <arg>plugin:org.jetbrains.kotlin.android:experimental=false</arg>
+                <arg>plugin:org.jetbrains.kotlin.android:enabled=true</arg>
+                <arg>plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap</arg>
+              </args>
+            </arrayArg>
+          </arrayArguments>
+        </compilerArguments>
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
+        <afterSyncTasks>
+          <task>generateDebugSources</task>
+        </afterSyncTasks>
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../keeplivelibrary/src/main/res;file://$MODULE_DIR$/../../../keeplivelibrary/src/debug/res;file://$MODULE_DIR$/../../../keeplivelibrary/build/generated/res/rs/debug;file://$MODULE_DIR$/../../../keeplivelibrary/build/generated/res/resValues/debug" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/../../../keeplivelibrary/src/androidTest/res;file://$MODULE_DIR$/../../../keeplivelibrary/src/androidTestDebug/res;file://$MODULE_DIR$/../../../keeplivelibrary/build/generated/res/rs/androidTest/debug;file://$MODULE_DIR$/../../../keeplivelibrary/build/generated/res/resValues/androidTest/debug" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+        <option name="PROJECT_TYPE" value="1" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../keeplivelibrary/build/generated/ap_generated_sources/debugUnitTest/out" />
+    <content url="file://$MODULE_DIR$/../../../keeplivelibrary/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../keeplivelibrary/src/test/java" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../keeplivelibrary/src/testDebug" />
+    <orderEntry type="jdk" jdkName="Android API 32 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="KeepLiveDemo.keeplivelibrary.main" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="Gradle: D./workspace/KeepLiveDemo/keeplivelibrary/libs/MiPush_SDK_Client_3_2_2.jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-android-extensions-runtime:1.6.20" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.20" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.20" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-annotations:26.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: android.arch.lifecycle:common:1.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: android.arch.core:common:1.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.greenrobot:eventbus:3.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: :MiPush_SDK_Client_3_2_2:" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:appcompat-v7:26.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:animated-vector-drawable:26.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-vector-drawable:26.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-v4:26.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-media-compat:26.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-fragment:26.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-core-utils:26.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-core-ui:26.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-compat:26.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: android.arch.lifecycle:runtime:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.blankj:utilcode:1.12.0@aar" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="KeepLiveDemo.keeplivelibrary.main" />
+</module>

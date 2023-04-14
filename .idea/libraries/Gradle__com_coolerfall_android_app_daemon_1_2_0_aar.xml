@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.coolerfall:android-app-daemon:1.2.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c4106fb025ccf020f3d22059e7faeb46/transformed/android-app-daemon-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c4106fb025ccf020f3d22059e7faeb46/transformed/android-app-daemon-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c4106fb025ccf020f3d22059e7faeb46/transformed/android-app-daemon-1.2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.coolerfall/android-app-daemon/1.2.0/be94affa69de35b12a4983ed826e105d7670e488/android-app-daemon-1.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.coolerfall/android-app-daemon/1.2.0/93f9e57cf83d7a1fe63a6152d02f6a94b6fc1cfd/android-app-daemon-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

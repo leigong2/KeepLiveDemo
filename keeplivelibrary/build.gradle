@@ -4,13 +4,13 @@ apply plugin: 'kotlin-android'
 //快捷的findviewfindid操作，建议加上
 apply plugin: 'kotlin-android-extensions'
 android {
-    compileSdkVersion 26
+    compileSdkVersion 32
 
 
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 32
         versionCode 1
         versionName "1.0"
 
@@ -24,6 +24,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
 
 }
 
@@ -34,8 +39,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'com.blankj:utilcode:1.12.0'
-    compile 'org.greenrobot:eventbus:3.1.1'
-    compile files('libs/MiPush_SDK_Client_3_2_2.jar')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'com.blankj:utilcode:1.12.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation(name: 'MiPush_SDK_Client_3_2_2', ext: 'jar')
 }
